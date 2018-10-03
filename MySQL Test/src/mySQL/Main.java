@@ -11,7 +11,7 @@ public class Main {
 		ResultSet resultSet = statement.executeQuery("SELECT * FROM testtable");
 		
 		while(resultSet.next()){
-			System.out.println(resultSet.getInt(1) + "  " + resultSet.getInt(2)+ "  " + resultSet.getInt(3) + "  " + resultSet.getInt(3));  
+			System.out.println(resultSet.getInt(1) + "  " + resultSet.getInt(2)+ "  " + resultSet.getInt(3) + "  " + resultSet.getInt(4));  
 			
 		}
 		
