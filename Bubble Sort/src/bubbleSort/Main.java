@@ -20,7 +20,7 @@ public class Main {
 					array[i + 1] = array[i];
 					array[i] = temp;
 					finished = true;
-				}
+				}	
 			}
 		}
 		System.out.println("done");
