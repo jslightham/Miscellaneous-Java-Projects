@@ -1,18 +1,18 @@
 import processing.core.PApplet;
 
 public class Main extends PApplet {
-	public static int[] i = { 345, 98, 423, 867, 234, 567, 756, 534, 423 };
 	public static int height = 1000;
 	public static int width = 1000;
 	public static int counter = 0;
 	public static int numElements = 1000;
 	public static int[] x = createArray(numElements);
-	public static int slowDown = 1000;
+	public static int slowDown = 1;
+	public static int currentValue = 0;
+	public static PlayTone sound = new PlayTone();
 
 	public static void main(String[] args) {
-
+		sound.test();
 		PApplet.main("Main");
-
 		SortingAlgorithms.mergeSort(x);
 
 	}
@@ -22,7 +22,7 @@ public class Main extends PApplet {
 	}
 
 	public void setup() {
-		frameRate(100);
+		frameRate(60);
 	}
 
 	public void draw() {
@@ -37,12 +37,12 @@ public class Main extends PApplet {
 			// stroke(0);
 		}
 		if(!mousePressed == true) {
-			slowDown = 1;
+			slowDown = 3;
 		}else {
 			slowDown =0;
 		}
 		for (int j = 0; j < x.length; j++) {
-			fill(0, 150, (int)(0.2*j));
+			fill(0, 150, (int)(0.2*x[j]));			
 			rect(j * width / x.length, height - x[j], width / x.length, x[j]);
 		}
 	}
@@ -55,8 +55,8 @@ public class Main extends PApplet {
 		int[] arr = new int[size];
 
 		for (int i = 0; i < arr.length; i++) {
-			arr[i] = height - width / numElements * i;
-			//arr[i] = (int)(Math.random() * height);
+			//arr[i] = height - width / numElements * i;
+			arr[i] = (int)(Math.random() * height);
 		}
 		for (int i = 0; i < 10; i++) {
 			SortingAlgorithms.shuffle(arr);

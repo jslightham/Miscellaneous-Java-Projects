@@ -11,6 +11,7 @@ public class SortingAlgorithms {
 			for (int j = i + 1; j < arr.length; j++) {
 				if (arr[minIndex] > arr[j])
 					minIndex = j;
+					PlayTone.setSound(arr[j]*2);
 				try {
 					Thread.currentThread().sleep(Main.slowDown);
 				} catch (Exception e) {
@@ -32,6 +33,7 @@ public class SortingAlgorithms {
 			int j;
 			for (j = i - 1; j >= 0 && temp < arr[j]; j--) {
 				arr[j + 1] = arr[j];
+				PlayTone.setSound(arr[j]*2);
 				try {
 					Thread.currentThread().sleep(Main.slowDown);
 				} catch (Exception e) {
@@ -48,12 +50,14 @@ public class SortingAlgorithms {
 
 		while (!isSorted(i)) {
 			shuffle(i);
+			
 			try {
 				Thread.currentThread().sleep(Main.slowDown);
 			} catch (Exception e) {
 				System.out.println(e);
 			}
 			m_counter++;
+			PlayTone.setSound(i[0]*2);
 			/*
 			 * if(counter%1000000==0) { System.out.println(counter); }
 			 */
@@ -71,6 +75,7 @@ public class SortingAlgorithms {
 			int a = i[index1];
 			i[index1] = i[index2];
 			i[index2] = a;
+			
 		}
 	}
 
@@ -114,6 +119,7 @@ public class SortingAlgorithms {
 		temp = array[i];
 		array[i] = array[j];
 		array[j] = temp;
+		PlayTone.setSound(array[i]*2);
 		m_counter++;
 	}
 
@@ -151,6 +157,7 @@ public class SortingAlgorithms {
 			if (tempArray[i] <= tempArray[j]) {
 				myArray[k] = tempArray[i];
 				i++;
+				PlayTone.setSound(myArray[i]*2);
 			} else {
 				myArray[k] = tempArray[j];
 				j++;
