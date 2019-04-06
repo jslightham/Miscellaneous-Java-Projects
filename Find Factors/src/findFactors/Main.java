@@ -1,4 +1,4 @@
-package findFactors;
+package src.findFactors;
 
 import java.util.Scanner;
 

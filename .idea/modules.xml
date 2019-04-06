@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Arduino Servo Test/Arduino Servo Test.iml" filepath="$PROJECT_DIR$/Arduino Servo Test/Arduino Servo Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Bubble Sort/Bubble Sort.iml" filepath="$PROJECT_DIR$/Bubble Sort/Bubble Sort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Colour Finder/Colour Finder.iml" filepath="$PROJECT_DIR$/Colour Finder/Colour Finder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Find Factors/Find Factors.iml" filepath="$PROJECT_DIR$/Find Factors/Find Factors.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MySQL Test/MySQL Test.iml" filepath="$PROJECT_DIR$/MySQL Test/MySQL Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Processing Test/Processing Test.iml" filepath="$PROJECT_DIR$/Processing Test/Processing Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Visualized Sorting/Visualized Sorting.iml" filepath="$PROJECT_DIR$/Visualized Sorting/Visualized Sorting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Word Count/Word Count.iml" filepath="$PROJECT_DIR$/Word Count/Word Count.iml" />
+    </modules>
+  </component>
+</project>
