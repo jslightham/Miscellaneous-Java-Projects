@@ -7,7 +7,16 @@ public class Game {
 	}
 	
 	public static void play() {
-		printBoard();
+		board[0][1] = new Piece("pawn", "white");
+		boolean isFinished = false;
+		while(!isFinished) {
+			
+			Command command = Parser.getCommand();
+			isFinished = processCommand(command);
+			printBoard();
+			
+		}
+		
 	}
 	
 	public static void printBoard() {
@@ -25,5 +34,9 @@ public class Game {
 			}
 			System.out.println();
 		}
+	}
+	
+	public static boolean processCommand(Command c) {
+		
 	}
 }

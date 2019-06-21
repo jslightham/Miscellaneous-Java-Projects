@@ -4,7 +4,10 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 public class Parser {
-	public Command getCommand(){
+	public Parser() {
+		
+	}
+	public static Command getCommand(){
 		String inputLine = "";
 		String fromRow = "", fromCol = "", toRow = "", toCol ="";
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
